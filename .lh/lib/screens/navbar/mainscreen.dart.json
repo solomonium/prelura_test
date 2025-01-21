@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/screens/navbar/mainscreen.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1737452357105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737452539807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,13 @@\n import 'package:flutter/material.dart';\n import 'package:prelura_test/core/provider/home_provider.dart';\n import 'package:prelura_test/export.dart';\n import 'package:prelura_test/screens/navbar/bottom_navbar.dart';\n+import 'package:prelura_test/screens/navbar/navbar_details/add_items.dart';\n+import 'package:prelura_test/screens/navbar/navbar_details/feeds.dart';\n+import 'package:prelura_test/screens/navbar/navbar_details/home.dart';\n+import 'package:prelura_test/screens/navbar/navbar_details/profile.dart';\n+import 'package:prelura_test/screens/navbar/navbar_details/search.dart';\n \n class MainScreen extends StatelessWidget {\n   const MainScreen({\n     super.key,\n@@ -14,12 +19,13 @@\n       body: Consumer<HomeProvider>(builder: (context, store, child) {\n         return IndexedStack(\n           index: store.navIndex,\n           children: const [\n-            Browse(),\n-            Bookings(),\n-            Inbox(),\n-            Profile(),\n+            FeedsScreen(),\n+            Searchscreen(),\n+            AddItemScreen(),\n+            Homescreen(),\n+            Profilescreen(),\n           ],\n         );\n       }),\n     );\n"
+                }
+            ],
+            "date": 1737452357105,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\nimport 'package:prelura_test/core/provider/home_provider.dart';\nimport 'package:prelura_test/export.dart';\nimport 'package:prelura_test/screens/navbar/bottom_navbar.dart';\n\nclass MainScreen extends StatelessWidget {\n  const MainScreen({\n    Key? key,\n  }) : super(key: key);\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      bottomNavigationBar: ClipRRect(\n          \n          child: const BottomNav()),\n      body: Consumer<HomeProvider>(builder: (context, store, child) {\n        return IndexedStack(\n          index: store.navIndex,\n          children: const [\n            Browse(),\n            Bookings(),\n            Inbox(),\n            Profile(),\n          ],\n        );\n      }),\n    );\n  }\n}\n"
+        }
+    ]
+}

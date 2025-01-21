@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/export.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1737448939252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1737448939252,
+            "name": "Commit-0",
+            "content": "export 'dart:convert';\nexport 'dart:developer';\nexport 'dart:io' show Platform;\nexport 'dart:io';\n\nexport 'package:flutter/foundation.dart';\nexport 'package:flutter/scheduler.dart';\nexport 'package:flutter_screenutil/flutter_screenutil.dart';\nexport 'package:flutter_svg/flutter_svg.dart';\nexport 'package:intl/intl.dart';\nexport 'package:provider/provider.dart';\nexport 'package:shared_preferences/shared_preferences.dart';\n\n// export 'components/components.dart';\n// export 'core/core.dart';\n// export 'res/res.dart';\n// export 'routes/routes.dart';\n// export 'utils/utils.dart';\n"
+        }
+    ]
+}

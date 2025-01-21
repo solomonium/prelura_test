@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/screens/navbar/navbar_details/feeds.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1737452386393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737456093629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,9 @@\n \n class _FeedsScreenState extends State<FeedsScreen> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Placeholder();\n+    return const SafeArea(child: Scaffold(body: Column(children: [\n+      Row(children: [],)\n+    ],),));\n   }\n }\n"
+                },
+                {
+                    "date": 1737456108468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n class _FeedsScreenState extends State<FeedsScreen> {\n   @override\n   Widget build(BuildContext context) {\n     return const SafeArea(\n-        child: Scaffold(\n+        child: Scaffold(backgroundColor: Colors.amberAccent,\n       body: Column(\n         children: [\n           Row(\n             children: [],\n"
+                },
+                {
+                    "date": 1737456158993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\n   Widget build(BuildContext context) {\n     return const SafeArea(\n         child: Scaffold(\n-      backgroundColor: Colors.amberAccent,\n+      backgroundColor: Colors.transparent,\n       body: Column(\n         children: [\n           Row(\n             children: [],\n"
+                }
+            ],
+            "date": 1737452386393,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass FeedsScreen extends StatefulWidget {\n  const FeedsScreen({super.key});\n\n  @override\n  State<FeedsScreen> createState() => _FeedsScreenState();\n}\n\nclass _FeedsScreenState extends State<FeedsScreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}\n"
+        }
+    ]
+}

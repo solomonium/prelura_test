@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/screens/navbar/navbar_details/add_items.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1737452505752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737452523636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,12 @@\n class AddItemScreen extends StatefulWidget {\n   const AddItemScreen({super.key});\n \n   @override\n-  State<AddItemScreen> createState() => _ProfilescreenState();\n+  State<AddItemScreen> createState() => _AddItemScreenState();\n }\n \n-class AddItemSscreenState extends State<Profilescreen> {\n+class _AddItemScreenState extends State<AddItemScreen> {\n   @override\n   Widget build(BuildContext context) {\n     return const Placeholder();\n   }\n"
+                }
+            ],
+            "date": 1737452505752,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass AddItemScreen extends StatefulWidget {\n  const AddItemScreen({super.key});\n\n  @override\n  State<AddItemScreen> createState() => _ProfilescreenState();\n}\n\nclass AddItemSscreenState extends State<Profilescreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}\n"
+        }
+    ]
+}

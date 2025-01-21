@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/screens/navbar/navbar_details/search.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1737452439325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1737452439325,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass Searchscreen extends StatefulWidget {\n  const Searchscreen({super.key});\n\n  @override\n  State<Searchscreen> createState() => _SearchscreenState();\n}\n\nclass _SearchscreenState extends State<Searchscreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}\n"
+        }
+    ]
+}

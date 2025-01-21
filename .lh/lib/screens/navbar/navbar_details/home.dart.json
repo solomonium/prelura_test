@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/screens/navbar/navbar_details/home.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1737451496490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1737451496489,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass Homescreen extends StatefulWidget {\n  const Homescreen({super.key});\n\n  @override\n  State<Homescreen> createState() => _HomescreenState();\n}\n\nclass _HomescreenState extends State<Homescreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}"
+        }
+    ]
+}

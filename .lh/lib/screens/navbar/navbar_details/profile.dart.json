@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/screens/navbar/navbar_details/profile.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1737452446201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1737452446201,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass Profilescreen extends StatefulWidget {\n  const Profilescreen({super.key});\n\n  @override\n  State<Profilescreen> createState() => _ProfilescreenState();\n}\n\nclass _ProfilescreenState extends State<Profilescreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}\n"
+        }
+    ]
+}

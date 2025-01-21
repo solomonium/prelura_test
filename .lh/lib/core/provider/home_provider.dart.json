@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/core/provider/home_provider.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1737449179676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1737449179676,
+            "name": "Commit-0",
+            "content": "\nimport 'package:prelura_test/core/provider/base_provider.dart';\n\nenum LoadingState {\n  idle,\n  busy,\n  loaded,\n  error;\n}\n\nclass HomeProvider extends BaseProvider {\n  LoadingState _loadingState = LoadingState.idle;\n  updateLoadingState(LoadingState loadingState) {\n    _loadingState = loadingState;\n    notifyListeners();\n  }\n\n  LoadingState get loadingState => _loadingState;\n  int _navIndex = 0;\n  int get navIndex => _navIndex;\n  set navIndex(int val) {\n    _navIndex = val;\n    // print(val);\n    notifyListeners();\n  }\n\n  int _tabIndex = 0;\n  int get tabIndex => _tabIndex;\n  set tabIndex(int val) {\n    _tabIndex = val;\n    notifyListeners();\n  }\n}\n"
+        }
+    ]
+}

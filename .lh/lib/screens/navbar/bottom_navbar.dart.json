@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/screens/navbar/bottom_navbar.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1737449547753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737453294938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n           child: Row(\n             mainAxisAlignment: MainAxisAlignment.spaceAround,\n             children: [\n               ...List.generate(\n-                4,\n+                items.length,\n                 (index) => _NavItem(\n                   icon: items[index]['icon'],\n                   title: items[index]['label'],\n                   isSelected: store.navIndex == index,\n"
+                },
+                {
+                    "date": 1737454408442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     required this.isSelected,\n     this.onPressed,\n   });\n \n-  final String icon;\n+  final Icon icon;\n   final String title;\n   final bool isSelected;\n   final VoidCallback? onPressed;\n \n@@ -60,12 +60,12 @@\n       child: Column(\n         mainAxisAlignment: MainAxisAlignment.center,\n         mainAxisSize: MainAxisSize.min,\n         children: [\n-          SvgPicture.asset(\n             icon,\n-            color: isSelected ? Colors.white : Colors.grey,\n-          ),\n+          // SvgPicture.asset(\n+          //   color: isSelected ? Colors.white : Colors.grey,\n+          // ),\n           10.verticalSpace,\n           SecondaryText(\n             text: title,\n             color: isSelected ? Colors.white : Colors.grey,\n"
+                },
+                {
+                    "date": 1737454488392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,11 +60,12 @@\n       child: Column(\n         mainAxisAlignment: MainAxisAlignment.center,\n         mainAxisSize: MainAxisSize.min,\n         children: [\n-          icon,\n+          Container(\n+            color: isSelected ? Colors.white : Colors.grey,\n+            child: icon),\n           // SvgPicture.asset(\n-          //   color: isSelected ? Colors.white : Colors.grey,\n           // ),\n           10.verticalSpace,\n           SecondaryText(\n             text: title,\n"
+                }
+            ],
+            "date": 1737449547753,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\nimport 'package:prelura_test/components/mock.dart';\nimport 'package:prelura_test/core/provider/home_provider.dart';\nimport 'package:prelura_test/export.dart';\n\nimport '../../components/secondary_text.dart';\n\nclass BottomNav extends StatelessWidget {\n  const BottomNav({Key? key}) : super(key: key);\n\n  @override\n  Widget build(BuildContext context) {\n    return Consumer<HomeProvider>(\n      builder: (context, store, child) {\n        List<Map<String, dynamic>> items = Mock.navItems();\n\n        return SizedBox(\n          height: 70,\n          width: double.infinity,\n          child: Row(\n            mainAxisAlignment: MainAxisAlignment.spaceAround,\n            children: [\n              ...List.generate(\n                4,\n                (index) => _NavItem(\n                  icon: items[index]['icon'],\n                  title: items[index]['label'],\n                  isSelected: store.navIndex == index,\n                  onPressed: () => store.navIndex = index,\n                ),\n              )\n            ],\n          ),\n        );\n      },\n    );\n  }\n}\n\nclass _NavItem extends StatelessWidget {\n  const _NavItem({\n    Key? key,\n    required this.icon,\n    required this.title,\n    required this.isSelected,\n    this.onPressed,\n  }) : super(key: key);\n\n  final String icon;\n  final String title;\n  final bool isSelected;\n  final VoidCallback? onPressed;\n\n  @override\n  Widget build(BuildContext context) {\n    // AppTheme theme = context.watch();\n\n    return GestureDetector(\n      onTap: onPressed,\n      child: Column(\n        mainAxisAlignment: MainAxisAlignment.center,\n        mainAxisSize: MainAxisSize.min,\n        children: [\n          SvgPicture.asset(\n            icon,\n            color: isSelected ? Colors.white : Colors.grey,\n          ),\n          10.verticalSpace,\n          SecondaryText(\n            text: title,\n            color: isSelected ? Colors.white : Colors.grey,\n          ),\n        ],\n      ),\n    );\n  }\n}\n"
+        }
+    ]
+}
